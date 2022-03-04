@@ -1,8 +1,8 @@
 calendar.vim
 ============
 
-This is my fork of [calendar-vim](https://github.com/mattn/calendar-vim). which
-fix the issues with [wiki.vim](https://github.com/lervag/wiki.vim).
+This is my fork of [calendar-vim][1]
+fix the issues with [wiki.vim][2]
 
 `calendar.vim` creates a calendar window you can use within vim.  It is useful
 in its own right as a calendar-inside-vim.  It also provides hooks to customise
@@ -16,16 +16,23 @@ You can install `calendar.vim` in the usual way, by copying the contents of the
 `plugin`, `autoload` and `doc` directories into the equivalent directories
 inside `.vim`.
 
-Alternatively, if you manage your plugins using [pathogen.vim][1], you can
-simply clone into the `bundle` directory:
+[pathogen.vim][3]:
 
     cd ~/.vim/bundle
-    git clone git://github.com/mattn/calendar-vim
+    git clone git://github.com/hoaxdream/calendar-vim
+
+[packer.nvim][4]
+
+    reuire("packer").startup(
+        function()
+            use "hoaxdream/calendar-vim"
+        end
+    )
 
 Or, using submodules:
 
     cd ~/.vim
-    git submodule add git://github.com/mattn/calendar-vim bundle/calendar-vim
+    git submodule add git://github.com/hoaxdream/calendar-vim bundle/calendar-vim
 
 Usage
 -----
@@ -55,4 +62,7 @@ Fast mappings are provided:
 For full documentation, install the plugin and run `:help calendar` from within
 Vim.
 
-[1]: https://github.com/tpope/vim-pathogen
+[1]: https://github.com/mattn/calendar-vim
+[2]: https://github.com/lervag/wiki.vim
+[3]: https://github.com/tpope/vim-pathogen
+[4]: https://github.com/wbthomason/packer.nvim
