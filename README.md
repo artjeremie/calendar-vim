@@ -1,8 +1,7 @@
 calendar.vim
 ============
 
-This is my fork of [calendar-vim][1]
-fix the issues with [wiki.vim][2]
+This is my fork of [calendar-vim][1] which fixes some issues with [wiki.vim][2]
 
 `calendar.vim` creates a calendar window you can use within vim.  It is useful
 in its own right as a calendar-inside-vim.  It also provides hooks to customise
